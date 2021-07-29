@@ -1,0 +1,136 @@
+@import "./../../../features/styles/index";
+
+.instructions-screen {
+  //typography
+  .title {
+    @include font-style-3;
+  }
+
+  .intro-text {
+    @include font-style-4;
+  }
+
+  .continue-button {
+    @include font-style-5;
+  }
+
+  .button-label {
+    @include font-style-1;
+  }
+
+  .word {
+    @include font-style-2;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  justify-self: center;
+  height: (100vh - 11.458vh - 13.02vh);
+  width: 95%;
+  max-width: 1024px;
+  margin: 11.458vh auto 13.02vh;
+
+  .title {
+    margin-bottom: 4.4986vh;
+  }
+
+  .intro-text {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 1.5em;
+  }
+
+  .example.target {
+    .word {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .button-label {
+      position: relative;
+      bottom: 50%;
+      left: 100%;
+    }
+  }
+
+  .button-pair {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    max-width: 560px;
+    justify-content: space-around;
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .word {
+        border: $color-2 solid 1px;
+        width: 4.87em;
+        height: 2.533em;
+        border-radius: 3.313em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+      }
+      img {
+        width: 4.024rem;
+        position: relative;
+        top: -54.25%;
+        &.left {
+          right: 50%;
+        }
+
+        &.right {
+          left: 50%;
+        }
+      }
+
+      .button-label {
+        background: none;
+        position: relative;
+        top: 15%;
+      }
+    }
+  }
+
+  .continue-button {
+    border: 1px solid #8ac926;
+    border-radius: 2em;
+    padding: 0.844em 2.813em;
+
+    &:hover {
+      background-color: $color-6;
+      color: $color-1;
+      transition: 200ms;
+    }
+  }
+  @media (orientation: portrait) {
+    html {
+      font-size: 14px;
+    }
+
+    .instructions-screen .example.target {
+      flex-direction: column;
+      .button-label {
+        bottom: auto;
+        left: auto;
+      }
+    }
+
+    .word {
+      font-size: 2rem;
+    }
+
+    .instructions-screen .button-pair .container img {
+      width: 4.024rem * 2/2.625;
+      top: -52.5%;
+    }
+  }
+}

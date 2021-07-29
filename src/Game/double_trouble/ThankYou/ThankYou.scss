@@ -1,0 +1,24 @@
+@import "./../../../features/styles/index";
+
+.ThankYou-component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .thank-you {
+    @include font-style-12;
+  }
+  .final-score {
+    @include font-style-13;
+    border: 1px solid $color-2;
+    border-radius: 5em / (2.125 * 16);
+    padding: 1em * (106 - 16 * 2.1) / (16 * 2.125 * 2) 1em * (106 - 16 * 2.1) /
+      (16 * 2.125 * 2);
+    margin: 30.05em / (16 * 2.125) auto 39.66em / (16 * 2.125);
+  }
+  .message {
+    @include font-style-4;
+  }
+}

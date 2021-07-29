@@ -1,11 +1,25 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { gamesListApiSlice } from "../features/gamesAPI";
+import incrementReducer from "./../features/scoreSlice";
+import changeReducer from "./../features/intentSlice";
+import setGameStateReducer from "./../features/gameStateSlice";
+import countdownReducer from "./../features/timerSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    [gamesListApiSlice.reducerPath]: gamesListApiSlice.reducer,
+    counter: incrementReducer,
+    change: changeReducer,
+    gameState: setGameStateReducer,
+    countdown: countdownReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(gamesListApiSlice.middleware),
 });
+
+/*store.subscribe(()=>{
+	console.log(store.getState())
+})*/
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;

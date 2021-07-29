@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+#root {
+  background-color: #231826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.instructions-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  height: 75.522vh;
+  width: 95%;
+  max-width: 1024px;
+  margin: 11.458vh auto 13.02vh;
+}
+
+.instructions-screen .title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #ffffff;
+  letter-spacing: 0px;
+  line-height: 2.1rem;
+}
+
+.instructions-screen .intro-text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 1.05rem;
+}
+
+.instructions-screen .continue-button {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #8ac926;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.instructions-screen .button-label {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #bc96e6;
+  letter-spacing: 0.175rem;
+  line-height: 1.05rem;
+}
+
+.instructions-screen .word {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 2.625rem;
+  color: #ffffff;
+  letter-spacing: 0.263rem;
+  line-height: 3.15rem;
+}
+
+.instructions-screen .title {
+  margin-bottom: 4.4986vh;
+}
+
+.instructions-screen .intro-text {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 1.5em;
+}
+
+.instructions-screen .example.target .word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.instructions-screen .example.target .button-label {
+  position: relative;
+  bottom: 50%;
+  left: 100%;
+}
+
+.instructions-screen .button-pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 95%;
+  max-width: 560px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.instructions-screen .button-pair .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.instructions-screen .button-pair .container .word {
+  border: #bc96e6 solid 1px;
+  width: 4.87em;
+  height: 2.533em;
+  border-radius: 3.313em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.instructions-screen .button-pair .container img {
+  width: 4.024rem;
+  position: relative;
+  top: -54.25%;
+}
+
+.instructions-screen .button-pair .container img.left {
+  right: 50%;
+}
+
+.instructions-screen .button-pair .container img.right {
+  left: 50%;
+}
+
+.instructions-screen .button-pair .container .button-label {
+  background: none;
+  position: relative;
+  top: 15%;
+}
+
+.instructions-screen .continue-button {
+  border: 1px solid #8ac926;
+  border-radius: 2em;
+  padding: 0.844em 2.813em;
+}
+
+.instructions-screen .continue-button:hover {
+  background-color: #8ac926;
+  color: #231826;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+@media (orientation: portrait) {
+  .instructions-screen html {
+    font-size: 14px;
+  }
+  .instructions-screen .instructions-screen .example.target {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .instructions-screen .instructions-screen .example.target .button-label {
+    bottom: auto;
+    left: auto;
+  }
+  .instructions-screen .word {
+    font-size: 2rem;
+  }
+  .instructions-screen .instructions-screen .button-pair .container img {
+    width: 3.0659rem;
+    top: -52.5%;
+  }
+}
+/*# sourceMappingURL=Instructions.css.map */

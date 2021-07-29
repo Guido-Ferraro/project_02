@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+#root {
+  background-color: #231826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
+
+.start-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  max-width: 1024px;
+  margin: 0 auto 0;
+}
+
+.start-screen .main-container {
+  -ms-flex-preferred-size: 881px;
+  flex-basis: 881px;
+}
+
+.start-screen .main-container .Ready-component {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.start-screen .main-container .Ready-component .button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.start-screen .main-container .Ready-component .button img {
+  top: 37.76042%;
+  -ms-flex-preferred-size: 123.62px;
+  flex-basis: 123.62px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.start-screen .main-container .Ready-component .button .default:hover {
+  opacity: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.start-screen .main-container .Ready-component .button-label {
+  position: absolute;
+  top: 57.03125%;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #8ac926;
+  letter-spacing: 0px;
+  line-height: 2.1rem;
+}
+
+.start-screen .main-container .Ready-component .instructions {
+  position: absolute;
+  top: 78.00911%;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  text-decoration: underline;
+}
+
+.start-screen .main-container .Set-component {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.start-screen .main-container .Set-component .countdownElement {
+  border: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.start-screen .main-container .Set-component .countdownElement.initial {
+  opacity: 1;
+}
+
+.start-screen .main-container .Set-component * {
+  position: absolute;
+}
+
+.start-screen .main-container .Set-component .countdown {
+  width: 16.09635vh;
+  height: 16.09635vh;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 2.625rem;
+  color: #bc96e6;
+  letter-spacing: 0;
+  line-height: 3.15rem;
+  line-height: 16.09635vh;
+  border-radius: 50%;
+  border: 1px solid #bc96e6;
+  background-color: #231826;
+}
+
+.start-screen .main-container .Set-component .countdown.three {
+  opacity: 1;
+}
+
+.start-screen .main-container .Set-component .countdown-margin {
+  width: 19.70833vh;
+  height: 19.70833vh;
+  background-color: #231826;
+  border-radius: 50%;
+}
+
+.start-screen .main-container .Set-component .number.accent {
+  width: 25.69271vh;
+  height: 25.69271vh;
+}
+
+.start-screen .main-container .Set-component .go.accent {
+  width: 37.36198vh;
+  height: 37.36198vh;
+  background-color: #231826;
+}
+
+.start-screen .main-container .Set-component .go-margin {
+  width: 26.02214vh;
+  height: 26.02214vh;
+  background-color: #231826;
+  border-radius: 50%;
+}
+
+.start-screen .main-container .Set-component .countdown.go {
+  color: white;
+  border-color: white;
+  width: 21.69792vh;
+  height: 21.69792vh;
+  line-height: 21.69792vh;
+}
+
+.start-screen .main-container .Go-component {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1024px;
+}
+
+.start-screen .main-container .Go-component .XinY-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 28.8776%;
+  width: 100%;
+}
+
+.start-screen .main-container .Go-component .XinY-component .word {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 2.625rem;
+  color: #ffffff;
+  letter-spacing: 0.263rem;
+  line-height: 3.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.start-screen .main-container .Go-component .XinY-component .word.target {
+  padding-bottom: 1.34524em;
+}
+
+.start-screen .main-container .Go-component .XinY-component .button-pair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 95%;
+  max-width: 560px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.start-screen .main-container .Go-component .XinY-component .button-pair .word {
+  border: #bc96e6 solid 1px;
+  width: 4.87em;
+  height: 2.533em;
+  border-radius: 3.313em;
+  -webkit-transition: 0.2s background-color;
+  transition: 0.2s background-color;
+}
+
+.start-screen
+  .main-container
+  .Go-component
+  .XinY-component
+  .button-pair
+  .word:hover {
+  cursor: pointer;
+}
+
+.start-screen
+  .main-container
+  .Go-component
+  .XinY-component
+  .button-pair
+  .word
+  #wrong-answer-left,
+.start-screen
+  .main-container
+  .Go-component
+  .XinY-component
+  .button-pair
+  .word
+  #wrong-answer-right {
+  position: absolute;
+  opacity: 0;
+}
+
+.start-screen .HUD-container {
+  -ms-flex-preferred-size: 143px;
+  flex-basis: 143px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.start-screen .HUD-container .timer-container {
+  -ms-flex-preferred-size: 508.45px;
+  flex-basis: 508.45px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(188, 150, 230, 0.09)),
+      to(rgba(188, 150, 230, 0.03))
+    ) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(
+      0deg,
+      rgba(188, 150, 230, 0.09) 0%,
+      rgba(188, 150, 230, 0.03) 100%
+    )
+    0% 0% no-repeat padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 3;
+  flex-shrink: 3;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.start-screen .HUD-container .timer-container .bar {
+  margin: 0;
+  padding: 0;
+}
+
+.start-screen .HUD-container .timer-container .outer {
+  -ms-flex-preferred-size: 343.87px;
+  flex-basis: 343.87px;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  border-radius: 8px;
+  width: 0;
+  border: 4px solid #231826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.start-screen .HUD-container .timer-container .inner {
+  border-radius: 8px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  width: 0;
+  height: calc(100% + 8px);
+  width: 100%;
+  border: 4px solid #bc96e6;
+  margin-bottom: -4px;
+}
+
+.start-screen .HUD-container .timer-container .time-left-label {
+  margin-top: 2.82812vh;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #bc96e6;
+  letter-spacing: 0.175rem;
+  line-height: 1.5rem;
+}
+
+.start-screen .HUD-container .timer-container .time-left {
+  -ms-flex-preferred-size: 39px;
+  flex-basis: 39px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #ffffff;
+  letter-spacing: 0.175rem;
+  line-height: 2.1rem;
+}
+
+.start-screen .HUD-container .score-container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 130px;
+  flex-basis: 130px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(188, 150, 230, 0.09)),
+      to(rgba(188, 150, 230, 0.03))
+    ) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(
+      0deg,
+      rgba(188, 150, 230, 0.09) 0%,
+      rgba(188, 150, 230, 0.03) 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+.start-screen .HUD-container .score-container .score-label {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #bc96e6;
+  letter-spacing: 0.175rem;
+  line-height: 1.5rem;
+}
+
+.start-screen .HUD-container .score-container .score {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: #ffffff;
+  letter-spacing: 0.175rem;
+  line-height: 2.1rem;
+}
+
+.start-screen .HUD-container .volume-container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-preferred-size: 130px;
+  flex-basis: 130px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(188, 150, 230, 0.03)),
+      to(rgba(188, 150, 230, 0.01))
+    ) 0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(
+      0deg,
+      rgba(188, 150, 230, 0.03) 0%,
+      rgba(188, 150, 230, 0.01) 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+.start-screen .HUD-container .volume-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  -ms-flex-preferred-size: 60.79px;
+  flex-basis: 60.79px;
+  height: 5.93652vh;
+  width: 6.19531vw;
+  cursor: auto;
+}
+
+.start-screen .HUD-container .volume-container button img {
+  position: absolute;
+  height: 5.93652vh;
+  width: 6.19531vw;
+  cursor: pointer;
+}
+
+.start-screen .HUD-container .volume-container button .sound-on {
+  opacity: 0;
+}
+
+@-webkit-keyframes countdownAnimation {
+  0% {
+    opacity: initial;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes countdownAnimation {
+  0% {
+    opacity: initial;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=Start.css.map */

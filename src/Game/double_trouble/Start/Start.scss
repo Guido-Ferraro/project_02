@@ -1,0 +1,304 @@
+@import "./../../../features/styles/index";
+
+.start-screen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-self: center;
+  justify-self: center;
+  max-width: 1024px;
+  margin: 0 auto 0;
+
+  .main-container {
+    flex-basis: 1024px - 143px;
+
+    .Ready-component {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .button {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          top: 100% * 290/768;
+
+          flex-basis: 123.62px;
+          cursor: pointer;
+          position: absolute;
+        }
+        .default:hover {
+          opacity: 0;
+          transition: 200ms;
+        }
+      }
+      .button-label {
+        position: absolute;
+        top: 100% * 438/768;
+        @include font-style-6;
+      }
+      .instructions {
+        position: absolute;
+        top: 100% * 599.11/768;
+        @include font-style-7;
+      }
+    }
+    .Set-component {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .countdownElement {
+        border: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &.initial {
+          opacity: 1;
+        }
+      }
+      * {
+        position: absolute;
+      }
+      .countdown {
+        width: 100vh * 123.62/ 768;
+        height: 100vh * 123.62/ 768;
+        text-align: center;
+        @include font-style-10;
+        line-height: 100vh * 123.62/ 768;
+        border-radius: 50%;
+        border: 1px solid $color-2;
+        background-color: $color-1;
+        &.three {
+          opacity: 1;
+        }
+      }
+
+      .countdown-margin {
+        width: 100vh * 151.36/ 768;
+        height: 100vh * 151.36/ 768;
+        background-color: $color-1;
+        border-radius: 50%;
+      }
+
+      .number.accent {
+        width: 100vh * 197.32/ 768;
+        height: 100vh * 197.32/ 768;
+      }
+      .go.accent {
+        width: 100vh * 286.94/ 768;
+        height: 100vh * 286.94/ 768;
+        background-color: $color-1;
+      }
+
+      .go-margin {
+        width: 100vh * 199.85/ 768;
+        height: 100vh * 199.85/ 768;
+        background-color: $color-1;
+        border-radius: 50%;
+      }
+
+      .countdown.go {
+        color: white;
+        border-color: white;
+        width: 100vh * 166.64/ 768;
+        height: 100vh * 166.64/ 768;
+        line-height: 100vh * 166.64/ 768;
+      }
+    }
+    .Go-component {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1024px;
+
+      .XinY-component {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100% * 221.78/768;
+        width: 100%;
+
+        .word {
+          @include font-style-2;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          &.target {
+            padding-bottom: 1em * 56.5/ (16 * 2.625);
+          }
+        }
+
+        .button-pair {
+          display: flex;
+          flex-direction: row;
+          width: 95%;
+          max-width: 560px;
+          justify-content: space-around;
+
+          .word {
+            border: $color-2 solid 1px;
+            width: 4.87em;
+            height: 2.533em;
+            border-radius: 3.313em;
+            transition: 0.2s background-color;
+            &:hover {
+              cursor: pointer;
+            }
+            #wrong-answer-left,
+            #wrong-answer-right {
+              position: absolute;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .HUD-container {
+    flex-basis: 143px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .timer-container {
+      flex-basis: 508.45px;
+      background: transparent
+        linear-gradient(
+          0deg,
+          rgba(188, 150, 230, 0.6 * 0.15) 0%,
+          rgba(188, 150, 230, 0.2 * 0.15) 100%
+        )
+        0% 0% no-repeat padding-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 3;
+      flex-grow: 1;
+
+      .bar {
+        margin: 0;
+        padding: 0;
+      }
+
+      .outer {
+        flex-basis: 343.87px;
+        flex-shrink: 1;
+        border-radius: 8px;
+        width: 0;
+        border: 4px solid $color-1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+
+      .inner {
+        border-radius: 8px;
+        transition: 1s all;
+        width: 0;
+        height: calc(100% + 8px);
+        width: 100%;
+        border: 4px solid $color-2;
+        margin-bottom: -4px;
+      }
+
+      .time-left-label {
+        margin-top: 100vh * 21.72/768;
+        @include font-style-8;
+      }
+
+      .time-left {
+        flex-basis: 39px;
+        @include font-style-9;
+      }
+    }
+
+    .score-container {
+      flex-grow: 1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 130px;
+      background: transparent
+        linear-gradient(
+          0deg,
+          rgba(188, 150, 230, 0.6 * 0.15) 0%,
+          rgba(188, 150, 230, 0.2 * 0.15) 100%
+        )
+        0% 0% no-repeat padding-box;
+      .score-label {
+        @include font-style-8;
+      }
+
+      .score {
+        @include font-style-9;
+      }
+    }
+
+    .volume-container {
+      flex-grow: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 130px;
+      background: transparent
+        linear-gradient(
+          0deg,
+          rgba(188, 150, 230, 0.6 * 0.05) 0%,
+          rgba(188, 150, 230, 0.2 * 0.05) 100%
+        )
+        0% 0% no-repeat padding-box;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        flex-basis: 60.79px;
+        height: 100vh * 60.79/1024;
+        width: 100vw * 47.58/768;
+        cursor: auto;
+        img {
+          position: absolute;
+          height: 100vh * 60.79/1024;
+          width: 100vw * 47.58/768;
+          cursor: pointer;
+        }
+        .sound-on {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes countdownAnimation {
+  0% {
+    opacity: initial;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

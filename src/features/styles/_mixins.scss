@@ -1,0 +1,139 @@
+@import "variables";
+
+@mixin view-border {
+  border: 1px solid white;
+}
+
+@mixin font-style(
+  $font-weight: 500,
+  $font-size: 0.875rem,
+  //14px
+  $color: $color-4,
+  //FFFFFF
+  $letter-spacing: 200,
+  $line-height: 1.05rem //16.8px
+) {
+  font-family: Poppins;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+//1.1
+@mixin font-style-1 {
+  @include font-style(
+    $font-size: 0.875rem,
+    $color: $color-2,
+    $letter-spacing: 0.175rem
+  );
+}
+
+//1.2, 1.5 - RED/BLUE
+@mixin font-style-2 {
+  @include font-style(
+    $font-size: 2.625rem,
+    $letter-spacing: 0.263rem,
+    $line-height: 3.15rem
+  );
+}
+
+//1.3
+@mixin font-style-3 {
+  @include font-style(
+    $font-size: 1.75rem,
+    $letter-spacing: 0px,
+    $line-height: 2.1rem
+  );
+}
+
+//1.4, 28.2
+@mixin font-style-4 {
+  @include font-style($font-weight: 400, $letter-spacing: 0);
+}
+
+//1.6
+@mixin font-style-5 {
+  @include font-style(
+    $font-size: 1.25rem,
+    $color: $color-6,
+    $letter-spacing: 0,
+    $line-height: 1.5rem
+  );
+  text-decoration: none;
+}
+
+//2.3
+@mixin font-style-6 {
+  @include font-style(
+    $font-size: 1.75rem,
+    $color: $color-6,
+    $letter-spacing: 0px,
+    $line-height: 2.1rem
+  );
+}
+
+//2.4
+@mixin font-style-7 {
+  @include font-style(
+    $font-size: 1.25rem,
+    $letter-spacing: 1em/20,
+    $line-height: 1.5rem
+  );
+  text-decoration: underline;
+}
+
+//3.1, 2.1
+@mixin font-style-8 {
+  @include font-style(
+    $color: $color-2,
+    $line-height: 1.5rem,
+    $letter-spacing: 2.8rem/16
+  );
+}
+
+//3.2, 2.2
+@mixin font-style-9 {
+  @include font-style(
+    $font-size: 1.75rem,
+    $letter-spacing: 2.8rem/16,
+    $line-height: 2.1rem
+  );
+}
+
+//3.3
+@mixin font-style-10 {
+  @include font-style(
+    $color: $color-2,
+    $font-size: 2.625rem,
+    $letter-spacing: 0,
+    $line-height: 3.15rem
+  );
+}
+
+//9.1
+@mixin font-style-11 {
+  @include font-style(
+    $font-size: 2.625rem,
+    $letter-spacing: 0,
+    $line-height: 3.15rem
+  );
+}
+
+//28.1
+@mixin font-style-12 {
+  @include font-style($font-size: 1.75rem, $line-height: 2.1rem);
+}
+
+//28.2 = 1.4
+
+//28.3
+@mixin font-style-13 {
+  @include font-style(
+    $font-size: 2.125rem,
+    $color: $color-2,
+    $letter-spacing: 0,
+    $line-height: 2.1rem
+  );
+}
